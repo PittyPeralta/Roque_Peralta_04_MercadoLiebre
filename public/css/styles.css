@@ -7,6 +7,15 @@ body {
     font-size: 12px;
 }
 
+nav ul li i {
+    margin-left: 5px;
+}
+
+#buscar {
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
 .titulares {
     font-size: 24px;
     align-items: center;
