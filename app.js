@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'home.html'))
 })
 
+app.get('/index', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'))
+})
 
 const port = 3000;
 
