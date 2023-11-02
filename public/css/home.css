@@ -28,12 +28,14 @@ main {
     align-items: center;
 }
 
+.ofertas,
 .ultima-visita {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+.ofertas article,
 .ultima-visita article {
     margin: 10px;
     width: 210px;
@@ -47,6 +49,25 @@ main {
     align-content: space-between;
 }
 
+.ofertas article:hover {
+    box-shadow: 7px 13px 37px var(--Gris-oscuro);
+}
+
+.ofertas article:hover #icon {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+.ultima-visita article:hover {
+    box-shadow: 7px 13px 37px var(--Gris-oscuro);
+}
+
+.ultima-visita article:hover #icon {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+.ofertas article .descripcion,
 .ultima-visita article .descripcion {
     border-top: solid 1px var(--Gris-claro);
     padding: 15px;
@@ -71,6 +92,7 @@ main {
     top: -15px;
 }
 
+.ofertas article .precio-descuento,
 .ultima-visita article .precio-descuento {
     width: 100%;
     display: flex;
@@ -81,19 +103,36 @@ main {
     justify-content: space-between;
 }
 
+.ofertas article .precio,
 .ultima-visita article .precio {
     font-size: 18px;
     justify-content: flex-start;
 }
 
+.ofertas article .descuento,
 .ultima-visita article .descuento {
     font-size: 16px;
     justify-content: flex-end;
     color: var(--Verde);
 }
 
+.ofertas article .descrip,
 .ultima-visita article .descrip {
+    opacity: 0;
+}
+
+.ofertas article:hover .descrip {
+    opacity: 1;
     font-size: 16px;
     width: 100%;
     margin-top: 10px;
+    transition: 0.5s;
+}
+
+.ultima-visita article:hover .descrip {
+    opacity: 1;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.5s;
 }

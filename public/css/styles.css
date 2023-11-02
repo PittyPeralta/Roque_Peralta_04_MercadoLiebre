@@ -107,6 +107,11 @@ footer {
     border-top: 1px solid var(--Negro);
 }
 
+footer h3 {
+    color: var(--Negro);
+    text-align: center;
+}
+
 .footer {
     text-align: center;
     margin-top: 10px;
@@ -115,15 +120,17 @@ footer {
 .footer i {
     margin-bottom: 10px;
     size: 2em;
+    color: #1259c3;
+}
+
+.footer i:hover {
+    color: var(--Gris-claro);
 }
 
 .footer p {
     margin-bottom: 10px;
 }
 
-.footer h3 {
-    color: var(--Negro);
-}
 
 @media (min-width: 460px) {
     /* Tablets */
@@ -207,5 +214,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+
     /* Laptop */
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
 }
