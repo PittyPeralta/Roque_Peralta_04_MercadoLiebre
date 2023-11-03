@@ -75,5 +75,6 @@ form .botones button {
 
 form .botones button:hover {
     cursor: pointer;
-    color: var(--Negro);
+    color: var(--blanco);
+    background-color: #0022AA;
 }

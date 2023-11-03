@@ -109,7 +109,9 @@ form .botones button {
     background-color: var(--Celeste);
 }
 
+
 form .botones button:hover {
     cursor: pointer;
-    color: var(--Negro);
+    color: var(--blanco);
+    background-color: #0022AA;
 }

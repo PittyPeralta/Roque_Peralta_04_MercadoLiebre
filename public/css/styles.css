@@ -120,12 +120,20 @@ footer h3 {
 .footer i {
     margin-bottom: 10px;
     size: 2em;
-    color: #1259c3;
+    color: var(--Celeste);
 }
 
-.footer i:hover {
+.footer .credit:hover i{ 
     color: var(--Gris-claro);
 }
+.footer .envio:hover i{ 
+    color: var(--Gris-claro);
+}
+.footer .seguridad:hover i{
+    color: var(--Gris-claro);
+}
+
+
 
 .footer p {
     margin-bottom: 10px;
