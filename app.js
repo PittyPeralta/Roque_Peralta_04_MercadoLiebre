@@ -15,7 +15,7 @@ app.get('/login', (req, res) => {
 app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'register.html'))
 })
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Servidor corriendo http://localhost:${port}`)
